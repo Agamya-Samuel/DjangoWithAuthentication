@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Homepage</title>
+		{% load static %}
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="{% static 'css/homepage.css' %}"
+		/>
+	</head>
+	<body>
+		<div class="container">
+			<h1>Welcome to the Homepage</h1>
+			<div class="links">
+				<a href="{% url 'signup' %}">Sign Up</a>
+				<a href="{% url 'signin' %}">Sign In</a>
+				<a href="{% url 'signout' %}">Sign Out</a>
+			</div>
+		</div>
+	</body>
+</html>

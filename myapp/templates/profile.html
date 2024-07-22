@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profile</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/profile.css' %}">
+</head>
+<body>
+    <div class="container">
+        <div class="profile-card">
+            <img src="{% static 'images/profile-picture.png' %}" alt="Profile Picture" class="profile-picture">
+            <h1>{{ user.username }}</h1>
+            <p class="title">Full Stack Developer</p>
+            <p>Some info about the user can go here.</p>
+            <a href="{% url 'signout' %}" class="logout-button">Logout</a>
+        </div>
+    </div>
+</body>
+</html>
